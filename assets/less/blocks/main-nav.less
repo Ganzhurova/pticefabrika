@@ -1,0 +1,70 @@
+.main-nav {
+  color: @white;
+
+  background-color: transparent;
+
+  @media (max-width: 1199px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.main-nav__list {
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-nav__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav .main-nav__list .main-nav__link {
+  color: @white;
+
+  &:hover {
+    color: @white;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @white;
+    text-decoration: none;
+  }
+}
+
+.main-nav--red .main-nav__list--red .main-nav__link--red {
+  color: @red;
+
+  &:hover {
+    color: @red;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @red;
+    text-decoration: none;
+  }
+}
+
+.main-nav .main-nav__toggler {
+  margin-left: auto;
+
+  border-color: fade(@white, 50%);
+}
+
+.main-nav--red .main-nav__toggler {
+  border-color: fade(@red, 50%);
+}
+
+.main-nav__toggler-icon {
+  color: @white;
+}
+
+.main-nav__toggler-icon--red {
+  color: @red;
+}

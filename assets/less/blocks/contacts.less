@@ -1,0 +1,45 @@
+.contacts__item {
+  margin-bottom: 21px;
+
+  & a {
+    color: @black;
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  @media (max-width: 330px) {
+    font-size: 18px;
+  }
+}
+
+.contacts__title {
+  font-weight: normal;
+}
+
+.contacts__item--different {
+  margin-bottom: 52px;
+}
+
+.contacts__item--map {
+  margin-bottom: 0;
+
+  @media (max-width: 991px) {
+    display: flex;
+  }
+}
+
+.contacts__map {
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .contacts__address {
+    padding-left: 32px;
+  }
+
+  .contacts__visibility {
+    display: none;
+  }
+}

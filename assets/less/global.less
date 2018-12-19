@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -33,16 +37,29 @@ body {
   color: @black;
 
   background-color: @gray;
+
+  overflow-x: hidden;
 }
 
 a:hover,
 a:focus {
+  color: inherit;
   text-decoration: none;
+}
+
+a:active {
+  color: inherit;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+h2 {
+  margin: 0;
+
+  font-size: 32px;
 }
 
 .visually-hidden:not(:focus):not(:active),

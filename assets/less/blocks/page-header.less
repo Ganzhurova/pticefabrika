@@ -1,7 +1,9 @@
 .page-header {
   height: 768px;
   margin: 0;
+  margin-bottom: 100px;
   padding: 0;
+  padding-top: 21px;
 
   color: @white;
 
@@ -9,20 +11,49 @@
   background-image: url("../img/bg-header.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 1366px 768px;
+  background-size: 1366px auto;
+}
+
+.page-header--inner {
+  height: auto;
+  margin-bottom: 0;
+  padding-bottom: 100px;
+
+  background-image: none;
+}
+
+.page-header .row {
+  align-items: baseline;
+
+  @media (max-width: 991px) {
+    align-items: center;
+  }
 }
 
 .page-header__logo {
   display: block;
-  width: 267px;
-  height: 219px;
+  max-width: 267px;
+  height: auto;
   margin: 0;
-  margin-top: 21px;
+  padding: 0;
 
   cursor: pointer;
 }
 
-.page-header__logo-image {
-  width: 267px;
-  height: 219px;
+.page-header__contacts {
+  text-align: center;
+
+  @media (max-width: 991px) {
+    text-align: right;
+  }
+}
+
+.page-header__phone {
+  display: block;
+
+  color: @white;
+}
+
+.page-header--inner .page-header__phone--inner {
+  color: @red;
 }

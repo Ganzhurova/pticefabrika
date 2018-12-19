@@ -1,0 +1,54 @@
+.indicator__title {
+  margin-bottom: 119px;
+}
+
+.indicator__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.indicator__item {
+  margin-bottom: 40px;
+
+  &:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}
+
+.indicator__item dl {
+  display: flex;
+  flex-direction: column;
+}
+
+.indicator__desc {
+  position: relative;
+  order: -1;
+
+  margin: 0;
+  margin-bottom: 40px;
+
+  color: @red;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 30px;
+    height: 1px;
+
+    background-color: #000000;
+  }
+}
+
+.indicator__number {
+  display: block;
+
+  font-size: 32px;
+}
+
+.indicator__name {
+  font-weight: 500;
+}

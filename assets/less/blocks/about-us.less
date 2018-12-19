@@ -1,0 +1,64 @@
+.about-us {
+  position: relative;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 98px;
+
+  color: @black;
+
+  background-color: @white;
+
+  &::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -999em;
+
+    width: 999em;
+
+    background-color: @white;
+  }
+
+  @media (max-width: 991px) {
+    &::before {
+      content: "";
+
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -999em;
+
+      width: 999em;
+
+      background-color: @white;
+    }
+  }
+}
+
+.about-us__title {
+  margin-bottom: 50px;
+}
+
+.about-us__desc {
+  margin-bottom: 80px;
+
+  font-weight: normal;
+}
+
+.about-us__button {
+  width: 200px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 90px;
+  }
+}
+
+.about-us__video {
+  @media (min-width: 1200px) {
+    height: 402px;
+  }
+}
